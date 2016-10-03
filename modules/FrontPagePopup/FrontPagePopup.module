@@ -37,7 +37,7 @@ class FrontPagePopup extends WireData implements Module {
 			'summary' => 'Popup valdymo modulis.',
 			
 			// Optional URL to more information about the module
-			'href' => 'http://estrategai.lt',
+			'href' => 'http://juslintek.rf.gd',
 
 			// singular=true: indicates that only one instance of the module is allowed.
 			// This is usually what you want for modules that attach hooks. 
@@ -95,8 +95,8 @@ Telefono numeris: $_POST[phone_number]
 IP: $_SERVER[REMOTE_ADDR]
 HTML;
 
-			wireMail('vaida.c@domuslumina.lt', 'popup@langdena.lt', 'Nauja užklausa iš popupo',$body);
-			wireMail('jusys.linas@gmail.com', 'popup@langdena.lt', 'Nauja užklausa iš popupo',$body);
+			wireMail('example@example.com', 'popup@example.com', 'Nauja užklausa iš popupo',$body);
+			wireMail('example@example.com', 'popup@example.com', 'Nauja užklausa iš popupo',$body);
 			echo json_encode(array('message'=>'Jūsų užklausa išsiųsta, su jumis neužilgo susisieks'));
 			exit();
 		}
